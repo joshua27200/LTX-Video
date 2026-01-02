@@ -184,6 +184,8 @@ The model is accessible right away via the following links:
 
 ## Run locally
 
+For a step-by-step local setup (env, weights download, and a quick smoke test), see [docs/SETUP.md](docs/SETUP.md).
+
 ### Installation
 The codebase was tested with Python 3.10.5, CUDA version 12.2, and supports PyTorch >= 2.1.2.
 On macOS, MPS was tested with PyTorch 2.3.0, and should support PyTorch == 2.3 or >= 2.6.
