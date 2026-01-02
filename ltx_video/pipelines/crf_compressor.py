@@ -64,7 +64,7 @@ def compress(image: torch.Tensor, crf=29):
         if original_width > cropped_width:
             result[:cropped_height, cropped_width:] = tensor[:cropped_height, -1:]
         if original_height > cropped_height and original_width > cropped_width:
-            result[cropped_height:, cropped_width:] = tensor[-1, -1]
+            result[cropped_height:, cropped_width:] = tensor[-1:, -1:]
         tensor = result
 
     return tensor
